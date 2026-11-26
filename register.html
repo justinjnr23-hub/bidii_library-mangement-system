@@ -28,15 +28,15 @@
             <label for="password" class="block text-sm font-medium mb-1">Password</label>
             <input type="password" id="password" name="password" autocomplete="new-password" required class="w-full rounded-md border border-gray-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800">
            </div>
-          <!-- remember me -->
-                    <div class="flex items-center gap-2">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember" class="text-sm">
-                            Keep me logged in
-                        </label>
-                    </div>
+          <!-- confirm password -->
+                     <div>
+               <label for="confirm" class="block text-sm font-medium mb-1">Confirm password</label>
+               <input type="password" id="confirm" name="confirm" autocomplete="new-password"
+              minlength="8" required
+              class="w-full rounded-md border border-gray-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800">
+               </div>
 
-                    <!-- register/signup button -->
+                    <!-- register/sign button -->
                     <button
                         type="submit"
                         class="w-full bg-gray-800 text-white rounded-md py-2 hover:bg-gray-700 transition"
