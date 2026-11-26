@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization  form</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+<body class="min-h-screen bg-gray-200 text-gray-800 ">
+    <main class="min-h-screen flex items-center justify-center">
+        <div class="w-full max-w-sm">
+            <!--the user login-->
+        <section class="bg-gray-100 rounded-lg border border-gray-300 shadow-sm p-8">
+          <h1 class="text-xl font-semi-bold"> log in</h1>
+       <!--paragraph-->
+          <p class="text-sm text-gray-600 mt-1">Enter your details to access</p>
+
+          <!--form-->
+          <form class="mt-6 space-y-4"> 
+            <!--email-->
+           <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" autocomplete="email" required class="w-full rounded-md border border-gray-300 bg-white">
+           </div>
+           <div>
+            <label for="password" class="block text-sm font-medium mb-1">Password</label>
+            <input type="password" autocomplete="current-password" required class="w-full rounded-md border border-gray-300 bg-white">
+           </div>
+            <div>
+                <!--password -->
+                <a href="#forgot password" class="text-gray-600 hover:text-gray-900 underline">forgot password?</a>
+            </div>
+          <!-- remember me -->
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" class="text-sm">
+                            Keep me logged in
+                        </label>
+                    </div>
+
+                    <!-- login button -->
+                    <button
+                        type="submit"
+                        class="w-full bg-gray-800 text-white rounded-md py-2 hover:bg-gray-700 transition"
+                    >
+                        Log in
+                    </button>
+
+
+          </form>
+
+
+        </section>
+    
+
+
+        </div>
+      
+
+
+    </main>
+    
+</body>
+</html>
